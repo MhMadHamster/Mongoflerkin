@@ -1,0 +1,44 @@
+.stat {
+  margin: 100px 0;
+  padding: 40px 0;
+  background-image: url('../img/bg-stat.jpg');
+  background-size: cover;
+  [class^="col-"] {
+    vertical-align: top;
+  }
+
+  .stat-wrapper {
+    word-wrap: normal;
+
+    .stat-number {
+      font: {
+        size: 42px;
+        weight: 500;
+      }
+      display: inline-block;
+      color: #fff;
+      line-height: 160px;
+      width: 160px;
+      height: 160px;
+      border: 6px solid #fff;
+      border-radius: 100%;
+      margin: 20px 0;
+    }
+
+    .stat-text {
+      font: {
+        size: 24px;
+        weight: 500;
+      }
+      color: #fff;
+      white-space: nowrap;
+      display: inline-block;
+      position: relative;
+    }
+
+    .crutch {
+      position: relative;
+      left: -13px;
+    }
+  }
+}

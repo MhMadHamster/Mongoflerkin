@@ -1,0 +1,16 @@
+body > * {
+  font-family: 'Fira Sans', Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center }
+
+.block-left { margin-right: auto; }
+.block-right { margin-left: auto; }
+.block-center { margin: 0 auto; }
+
+.italic { font-style: italic; }

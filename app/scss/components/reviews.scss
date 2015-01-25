@@ -1,0 +1,29 @@
+.reviews {
+  margin: 100px 0 50px;
+
+  .reviews-wrapper {
+    margin: 50px 0;
+
+    .client-review {
+
+      &__photo {
+        border-radius: 50%
+      }
+
+      &__name {
+        font: {
+          size: 22px;
+          weight: 500;
+        }
+        color: #353535;
+        line-height: 24px;
+      }
+
+      &__text {
+        font-size: 18px;
+        color: #353535;
+        line-height: 24px;
+      }
+    }
+  }
+}

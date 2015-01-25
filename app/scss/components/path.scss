@@ -1,0 +1,107 @@
+.how {
+  &-header {
+    background-color: #fff;
+  }
+  &-path {
+    border-top: 100px solid #fff;
+    background-image: url('../img/path-bg.jpg');
+    background-position: 50% 0%;
+
+    .row,
+    [class^="col-"] {
+      height: 100%;
+    }
+
+    .path-wrapper {
+      background-image: url('../img/path-line.png');
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 300px;
+      padding-bottom: 200px;
+
+      .step-wrapper {
+        position: relative;
+        height: 100%;
+
+        .step {
+          position: relative;
+          width: 50%;
+          height: 100%;
+          font: {
+            size: 18px;
+          }
+          color: #454545;
+          line-height: 26px;
+
+          &:after,
+          &:before {
+            content: '';
+            display: block;
+            position: absolute;
+          }
+
+          &:after {
+            height: 90px;
+            width: 100%;
+            background-image: url('../img/path-balloon.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            margin-top: 10px;
+          }
+
+          &:before {
+            width: 100%;
+            height: 90px;
+            font: {
+              weight: 500;
+              size: 20px;
+            }
+            line-height: 26px;
+            color: #fff;
+            top: 55px;
+            z-index: 1;
+          }
+        }
+      }
+
+      .step-1,
+      .step-5 {
+        top: 145px;
+      }
+
+      .step-3 {
+        top: -30px;
+        left: 10px;
+      }
+
+      .step-2,
+      .step-4 {
+        left: 10px;
+        top: 95px;
+      }
+
+      .step-1 .step:before {
+        content: '1';
+      }
+
+      .step-2 .step:before {
+        content: '2';
+        top: 80px;
+      }
+
+      .step-3 .step:before {
+        content: '3';
+      }
+
+      .step-4 .step:before {
+        content: '4';
+      }
+
+      .step-5 .step:before {
+        content: '5';
+      }
+    }
+  }
+}

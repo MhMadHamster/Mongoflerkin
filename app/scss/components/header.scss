@@ -1,0 +1,39 @@
+header,
+footer {
+  background-color: $header-bg-color;
+
+  .logo {
+    font: {
+      weight: 500;
+      style: normal;
+    }
+    > a {
+      color: $header-font-color;
+      font-size: 22px;
+    }
+    padding: 20px 0 20px;
+  }
+
+  .menu {
+    > ul > li {
+      display: inline-block;
+    }
+
+    &__item {
+      font: {
+        weight: normal;
+        style: normal;
+        size: 18px;
+      }
+      color: $header-font-color;
+      padding: 5px 10px;
+      margin-left: 10px;
+      border: 1px solid transparent;
+
+      &:hover {
+        border: 1px solid $header-nav-hover-border;
+      }
+    }
+  }
+
+}

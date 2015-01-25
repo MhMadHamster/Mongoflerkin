@@ -1,0 +1,135 @@
+.contacts {
+  margin-top: 50px;
+  background-image: url('../img/bg-contacts.jpg');
+  background-size: cover;
+  [class^="col-"] {
+    vertical-align: top;
+  }
+
+  .airport {
+    margin: 50px 0;
+    
+    &__thumb {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #337ba0;
+      display: inline-block;
+      margin-bottom: 30px;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 41px;
+        height: 40px;
+        background-image: url('../img/spritesheet.png');
+        background-position: -10px -184px;
+      }
+    }
+
+    &__text {
+      font: {
+        size: 26px;
+        weight: 500;
+      }
+      color: #444;
+      line-height: 26px;
+      margin: 0;
+    }
+
+    &__address {
+      font-size: 18px;
+      line-height: 26px;
+      color: #616161;
+      margin: 10px 0;
+    }
+  }
+
+  .office {
+    position: relative;
+    padding-left: 55px;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-image: url('../img/spritesheet.png');
+      background-repeat: no-repeat;
+      width: 35px;
+      height: 50px;
+      background-position: -10px -75px;
+      top: 0px;
+      left: 0px;
+    }
+    
+    &__location {
+      font: {
+        size: 22px;
+        weight: 500;
+      }
+      color: #2b2b2b;
+      line-height: 26px;
+      margin: 0;
+    }
+
+    &__address-wrapper {
+      margin: 10px 0;
+    }
+
+    &__address,
+    &__schedule {
+      font-size: 20px;
+      line-height: 26px;
+      color: #525252;
+      margin: 0;
+    }
+
+    &__phone {
+      font: {
+        size: 26px;
+        weight: 500;
+      }
+      color: #292929;
+      line-height: 26px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .social {
+
+    .email {
+      position: relative;
+      font-size: 22px;
+      line-height: 26px;
+      color: #444;
+      margin-top: 0;
+      border-bottom: 1px solid #444;
+      display: inline-block;
+      margin-left: 30px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:after {
+        content: '\e802';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -30px;
+        color: #337ba0;
+        font-size: 20px;
+        font-family: 'socials';
+      }
+    }
+
+    .icons {
+
+      .icon {
+        font-size: 20px;
+        text-decoration: none;
+        color: #444;
+        margin-right: 10px;
+      }
+    }
+  }
+}

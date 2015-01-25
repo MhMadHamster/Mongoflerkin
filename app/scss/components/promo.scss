@@ -1,0 +1,37 @@
+.promo {
+  background-image: url('../img/promo-bg.jpg');
+  background-position: 50% 0%;
+  background-size: 100% 130%;
+
+  &-wrapper {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font: {
+      size: 66px;
+      width: 500;
+      style: normal;
+    }
+    color: #fff;
+    padding: 185px 0
+  }
+
+  &__btn {
+    font: {
+      size: 18px;
+      width: normal;
+      style: normal;
+    }
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    display: inline-block;
+  }
+
+  &__arrow {
+    padding: 35px 0 25px;
+    display: block;
+  }
+}

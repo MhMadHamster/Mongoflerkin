@@ -1,0 +1,50 @@
+.section-header {
+  display: block;
+
+  &__text {
+    font: {
+      weight: 500;
+      size: 32px;
+    }
+    line-height: 26px;
+    padding: 15px 0;
+    color: #444;
+    display: block;
+  }
+
+  &__underline {
+    width: 62px;
+    height: 6px;
+    background-color: #3e98d7;
+    display: block;
+  }
+}
+
+.section-text {
+  display: block;
+  margin: 25px 0;
+  font: {
+    weight: normal;
+    size: 18px;
+  }
+  line-height: 24px;
+  color: #444;
+}
+
+span.section-text {
+  margin: 0;
+}
+
+.section-textblock {
+  margin: 20px 0 60px;
+}
+
+.subheader {
+  font: {
+    size: 26px;
+    weight: 500;
+  }
+  color: #444;
+  line-height: 24px;
+  margin: 30px 0;
+}

@@ -1,0 +1,48 @@
+.details {
+  margin: 100px 0;
+  [class^="col-"] {
+    vertical-align: top;
+  }
+
+  .payment {
+    padding-right: 4%;
+  }
+
+  .faq {
+    padding-left: 4%;
+
+    .faq-list {
+      margin: 40px 0;
+
+      &__question {
+        position: relative;
+        font-size: 18px;
+        line-height: 24px;
+        color: #444;
+        padding-left: 55px;
+        margin: 20px 0;
+
+        &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          background-image: url('../img/spritesheet.png');
+          background-repeat: no-repeat;
+          width: 40px;
+          height: 34px;
+          background-position: -10px -244px;
+          top: -6px;
+          left: 0px;
+        }
+      }
+
+      &__answer {
+        font-size: 16px;
+        line-height: 24px;
+        color: #444;
+        padding-left: 75px;
+        margin: 20px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,263 @@
+.cost {
+  margin: 100px 0;
+  [class^="col-"] {
+    vertical-align: top;
+  }
+}
+
+.price-form {
+
+  // Маршрут полета
+  .form-path {
+    font-size: 0;
+
+    &__text {
+      font: {
+        size: 18px;
+      }
+      color: #444;
+      line-height: 24px;
+      display: inline-block;
+      width: 40%
+    }
+
+    &__select {
+      position: relative;
+      display: inline-block;
+      width: 60%;
+
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        @include icon-dropdown;
+      }
+
+      select {
+        @include price-input;
+        @include appearance;
+        width: 100%;
+        height: 100%;
+        outline: none;
+      }
+    }
+  }
+
+  // Количество человек
+  .form-pplcount {
+    font-size: 0;
+
+    &__text {
+      font: {
+        size: 18px;
+      }
+      color: #444;
+      line-height: 24px;
+      display: inline-block;
+    }
+
+    &__text {
+      width: 40%;
+    }
+
+    &__select {
+      width: 15%;
+      display: inline-block;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        @include icon-dropdown;
+      }
+
+      select {
+        @include price-input;
+        @include appearance;
+        width: 100%;
+        height: 100%;
+        outline: none;
+      }
+    }
+
+    .form-childcount {
+      display: inline-block;
+      font-size: 0;
+      width: 45%;
+
+      &__text {
+        font: {
+          size: 18px;
+        }
+        color: #444;
+        line-height: 24px;
+        display: inline-block;
+        width: 50%;
+        padding-right: 15px;
+      }
+
+      &__select {
+        display: inline-block;
+        width: 35%;
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          @include icon-dropdown;
+        }
+
+        select {
+          @include price-input;
+          @include appearance;
+          width: 100%;
+          height: 100%;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  // Имя и фамилия
+  .form-name {
+    font-size: 0;
+
+    &__text {
+      font: {
+        size: 18px;
+      }
+      color: #444;
+      line-height: 24px;
+      display: inline-block;
+      width: 40%;
+    }
+
+    &__input {
+      width: 60%;
+      display: inline-block;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        background-image: url('../img/spritesheet.png');
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 15px;
+        background-position: -10px -40px;
+        top: 11px;
+        left: 10px;
+      }
+
+      input {
+        @include price-input;
+        @include appearance;
+        padding-left: 37px;
+        width: 100%;
+        height: 100%;
+        outline: none;
+      }
+    }
+  }
+
+  // Телефон
+  .form-phone {
+    font-size: 0;
+
+    &__text {
+      font: {
+        size: 18px;
+      }
+      color: #444;
+      line-height: 24px;
+      display: inline-block;
+      width: 40%;
+    }
+
+    &__input{
+      width: 60%;
+      display: inline-block;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        background-image: url('../img/spritesheet.png');
+        background-repeat: no-repeat;
+        width: 19px;
+        height: 19px;
+        background-position: -10px -145px;
+        top: 9px;
+        left: 10px;
+      }
+
+      input {
+        @include price-input;
+        @include appearance;
+        padding-left: 37px;
+        width: 100%;
+        height: 100%;
+        outline: none;
+      }
+    }
+  }
+
+  // Стоимость & Кнопка
+  .form-submit {
+    font-size: 0;
+
+    &__text {
+      font: {
+        size: 18px;
+        weight: 700;
+      }
+      color: #444;
+      line-height: 24px;
+      display: inline-block;
+      width: 20%;
+      vertical-align: middle;
+    }
+
+    &__worth {
+      font: {
+        size: 38px;
+        weight: 500;
+      }
+      color: #f97e7e;
+      line-height: 24px;
+      display: inline-block;
+      width: 40%;
+      vertical-align: middle;
+    }
+
+    &__button {
+      width: 40%;
+      display: inline-block;
+      vertical-align: middle;
+
+      button {
+        font: {
+          family: 'Fira Sans' Arial sans-serif;
+          size: 18px;
+          weight: 500;
+        }
+        color: #fff;
+        line-height: 24px;
+        background-color: #46b0dc;
+        padding: 9px 40px 7px;
+        border-radius: 3px;
+        border: 0;
+        outline: none;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

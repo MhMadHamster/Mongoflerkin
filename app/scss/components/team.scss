@@ -1,0 +1,31 @@
+.team {
+  margin: 100px 0;
+
+  .team-wrapper {
+    margin: 50px 0;
+
+    .team-member {
+
+      &__photo {
+        border-radius: 50%;
+      }
+
+      &__name {
+        font: {
+          size: 22px;
+          weight: 500;
+        }
+        line-height: 26px;
+        color: #444;
+        margin: 30px 0 10px;
+      }
+
+      &__post {
+        font-size: 18px;
+        line-height: 26px;
+        color: #444;
+        margin: 10px 0;
+      }
+    }
+  }
+}

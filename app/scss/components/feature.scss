@@ -1,0 +1,25 @@
+.feature {
+  padding: 75px 0;
+  background-color: #fff;
+  display: block;
+
+  &-img {
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle
+  }
+
+  &-text {
+    font: {
+      weight: 500;
+      style: normal;
+      size: 18px;
+    }
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: #444;
+    display: inline-block;
+    width: 75%;
+    vertical-align: middle
+  }
+}
