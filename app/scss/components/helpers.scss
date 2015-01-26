@@ -1,5 +1,5 @@
 body > * {
-  font-family: 'Fira Sans', Arial, sans-serif;
+  font-family: 'Fira Sans', Arial, Helvetica Neue, Helvetica, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -14,3 +14,10 @@ body > * {
 .block-center { margin: 0 auto; }
 
 .italic { font-style: italic; }
+
+// Firefox dashed select border focus fix
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 #000 !important;
+}
+
