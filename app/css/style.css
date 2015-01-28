@@ -201,8 +201,8 @@ header, footer {
     border: 1px solid #fff;
     display: inline-block; }
   .promo__arrow {
-    padding: 35px 0 25px;
-    display: block; }
+    padding: 35px 35px 25px;
+    display: inline-block; }
 
 .feature {
   padding: 75px 0;
