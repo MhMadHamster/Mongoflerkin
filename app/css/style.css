@@ -181,7 +181,8 @@ header, footer {
 .promo {
   background-image: url('../img/promo-bg.jpg');
   background-position: 50% 0%;
-  background-size: 100% 130%; }
+  background-size: 100% 130%;
+  background-attachment: fixed; }
   .promo-wrapper {
     width: 65%;
     margin: 0 auto; }
@@ -301,7 +302,10 @@ span.section-text {
 .how-path {
   border-top: 100px solid #fff;
   background-image: url('../img/path-bg.jpg');
-  background-position: 50% 0%; }
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
   .how-path .row, .how-path [class^="col-"] {
     height: 100%; }
   .how-path .path-wrapper {
@@ -694,7 +698,8 @@ span.section-text {
   margin: 100px 0;
   padding: 40px 0;
   background-image: url('../img/bg-stat.jpg');
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   .stat [class^="col-"] {
     vertical-align: top; }
   .stat .stat-wrapper {
@@ -758,7 +763,8 @@ span.section-text {
 .contacts {
   margin-top: 50px;
   background-image: url('../img/bg-contacts.jpg');
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   .contacts [class^="col-"] {
     vertical-align: top; }
   .contacts .airport {
