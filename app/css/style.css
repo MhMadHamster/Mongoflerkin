@@ -173,7 +173,7 @@ header, footer {
     font-size: 18px;
     color: #ffffff;
     padding: 5px 10px;
-    margin-left: 9px;
+    margin-left: 10px;
     border: 1px solid transparent; }
     header .menu__item:hover, footer .menu__item:hover {
       border: 1px solid #efefef; }
@@ -304,8 +304,7 @@ span.section-text {
   background-image: url('../img/path-bg.jpg');
   background-position: 50% 0%;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
+  background-size: cover; }
   .how-path .row, .how-path [class^="col-"] {
     height: 100%; }
   .how-path .path-wrapper {
