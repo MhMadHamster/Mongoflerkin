@@ -4,34 +4,23 @@
   background-image: url('../img/bg-stat.jpg');
   background-size: cover;
   background-attachment: fixed;
-  [class^="col-"] {
-    vertical-align: top;
-  }
+  @include column-va-top;
 
   .stat-wrapper {
     word-wrap: normal;
 
     .stat-number {
-      font: {
-        size: 42px;
-        weight: 500;
-      }
+      @include font($stat-main, 42px, 500, 160px);
       display: inline-block;
-      color: #fff;
-      line-height: 160px;
       width: 160px;
       height: 160px;
-      border: 6px solid #fff;
+      border: 6px solid $stat-main;
       border-radius: 100%;
       margin: 20px 0;
     }
 
     .stat-text {
-      font: {
-        size: 24px;
-        weight: 500;
-      }
-      color: #fff;
+      @include font($stat-main, 24px, 500, auto);
       white-space: nowrap;
       display: inline-block;
       position: relative;

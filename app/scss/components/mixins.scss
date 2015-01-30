@@ -37,3 +37,18 @@
   top: 16px;
   right: 10px;
 }
+
+@mixin column-va-top {
+  [class^="col-"] {
+    vertical-align: top;
+  }
+}
+
+@mixin font($color: #000, $size: 18px, $weight: normal, $lh: 26px) {
+  font: {
+    weight: $weight;
+    size: $size;
+  }
+  color: $color;
+  line-height: $lh;
+}

@@ -56,12 +56,7 @@
           &:before {
             width: 100%;
             height: 90px;
-            font: {
-              weight: 500;
-              size: 20px;
-            }
-            line-height: 26px;
-            color: #fff;
+            @include font(#fff, 20px, 500);
             top: 55px;
             z-index: 1;
           }

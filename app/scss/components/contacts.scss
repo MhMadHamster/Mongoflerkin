@@ -3,9 +3,7 @@
   background-image: url('../img/bg-contacts.jpg');
   background-size: cover;
   background-attachment: fixed;
-  [class^="col-"] {
-    vertical-align: top;
-  }
+  @include column-va-top;
 
   .airport {
     margin: 50px 0;
@@ -13,7 +11,7 @@
     &__thumb {
       padding: 10px;
       border-radius: 5px;
-      background-color: #337ba0;
+      background-color: $thumb-bg;
       display: inline-block;
       margin-bottom: 30px;
 
@@ -28,19 +26,12 @@
     }
 
     &__text {
-      font: {
-        size: 26px;
-        weight: 500;
-      }
-      color: #444;
-      line-height: 26px;
+      @include font($main-color, 26px, 500);
       margin: 0;
     }
 
     &__address {
-      font-size: 18px;
-      line-height: 26px;
-      color: #616161;
+      @include font(#616161);
       margin: 10px 0;
     }
   }
@@ -63,12 +54,7 @@
     }
     
     &__location {
-      font: {
-        size: 22px;
-        weight: 500;
-      }
-      color: #2b2b2b;
-      line-height: 26px;
+      @include font(#2b2b2b, 22px, 500);
       margin: 0;
     }
 
@@ -78,19 +64,12 @@
 
     &__address,
     &__schedule {
-      font-size: 20px;
-      line-height: 26px;
-      color: #525252;
+      @include font(#525252, 20px);
       margin: 0;
     }
 
     &__phone {
-      font: {
-        size: 26px;
-        weight: 500;
-      }
-      color: #292929;
-      line-height: 26px;
+      @include font(#292929, 26px, 500);
       margin-bottom: 50px;
     }
   }
@@ -99,9 +78,7 @@
 
     .email {
       position: relative;
-      font-size: 22px;
-      line-height: 26px;
-      color: #444;
+      @include font($main-color, 22px);
       margin-top: 0;
       border-bottom: 1px solid #444;
       display: inline-block;
@@ -117,7 +94,7 @@
         position: absolute;
         top: 0;
         left: -30px;
-        color: #337ba0;
+        color: $thumb-bg;
         font-size: 20px;
         font-family: 'socials';
       }

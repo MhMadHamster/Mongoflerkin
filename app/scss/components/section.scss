@@ -2,13 +2,8 @@
   display: block;
 
   &__text {
-    font: {
-      weight: 500;
-      size: 32px;
-    }
-    line-height: 26px;
+    @include font($main-color, 32px, 500);
     padding: 15px 0;
-    color: #444;
     display: block;
   }
 
@@ -23,12 +18,7 @@
 .section-text {
   display: block;
   margin: 25px 0;
-  font: {
-    weight: normal;
-    size: 18px;
-  }
-  line-height: 24px;
-  color: #444;
+  @include font($main-color, $lh: 24px);
 }
 
 span.section-text {
@@ -40,11 +30,6 @@ span.section-text {
 }
 
 .subheader {
-  font: {
-    size: 26px;
-    weight: 500;
-  }
-  color: #444;
-  line-height: 24px;
+  @include font($main-color, 26px, 500, 24px);
   margin: 30px 0;
 }

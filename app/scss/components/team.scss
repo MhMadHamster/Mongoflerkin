@@ -11,19 +11,12 @@
       }
 
       &__name {
-        font: {
-          size: 22px;
-          weight: 500;
-        }
-        line-height: 26px;
-        color: #444;
+        @include font($main-color, 22px, 500);
         margin: 30px 0 10px;
       }
 
       &__post {
-        font-size: 18px;
-        line-height: 26px;
-        color: #444;
+        @include font($main-color);
         margin: 10px 0;
       }
     }

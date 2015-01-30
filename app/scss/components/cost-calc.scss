@@ -1,8 +1,6 @@
 .cost {
   margin: 100px 0;
-  [class^="col-"] {
-    vertical-align: top;
-  }
+  @include column-va-top;
 }
 
 .price-form {
@@ -12,11 +10,7 @@
     font-size: 0;
 
     &__text {
-      font: {
-        size: 18px;
-      }
-      color: #444;
-      line-height: 24px;
+      @include font($main-color, 18px, $lh: 24px);
       display: inline-block;
       width: 40%
     }
@@ -49,11 +43,7 @@
     font-size: 0;
 
     &__text {
-      font: {
-        size: 18px;
-      }
-      color: #444;
-      line-height: 24px;
+      @include font($main-color, $lh: 24px);
       display: inline-block;
     }
 
@@ -88,11 +78,7 @@
       width: 45%;
 
       &__text {
-        font: {
-          size: 18px;
-        }
-        color: #444;
-        line-height: 24px;
+        @include font($main-color, $lh: 24px);
         display: inline-block;
         width: 50%;
         padding-right: 15px;
@@ -126,11 +112,7 @@
     font-size: 0;
 
     &__text {
-      font: {
-        size: 18px;
-      }
-      color: #444;
-      line-height: 24px;
+      @include font($main-color, $lh: 24px);
       display: inline-block;
       width: 40%;
     }
@@ -169,11 +151,7 @@
     font-size: 0;
 
     &__text {
-      font: {
-        size: 18px;
-      }
-      color: #444;
-      line-height: 24px;
+      @include font($main-color, $lh: 24px);
       display: inline-block;
       width: 40%;
     }
@@ -212,24 +190,14 @@
     font-size: 0;
 
     &__text {
-      font: {
-        size: 18px;
-        weight: 700;
-      }
-      color: #444;
-      line-height: 24px;
+      @include font($main-color, $weight: 700, $lh: 24px);
       display: inline-block;
       width: 20%;
       vertical-align: middle;
     }
 
     &__worth {
-      font: {
-        size: 38px;
-        weight: 500;
-      }
-      color: #f97e7e;
-      line-height: 24px;
+      @include font(#f97e7e, 38px, 500, $lh: 24px);
       display: inline-block;
       width: 40%;
       vertical-align: middle;

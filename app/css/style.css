@@ -159,19 +159,19 @@ select:-moz-focusring {
 header, footer {
   background-color: #2c2c2c; }
   header .logo, footer .logo {
-    font-weight: 500;
-    font-style: normal;
     padding: 20px 0 20px; }
     header .logo > a, footer .logo > a {
+      font-weight: 500;
+      font-size: 22px;
       color: #ffffff;
-      font-size: 22px; }
+      line-height: 26px; }
   header .menu > ul > li, footer .menu > ul > li {
     display: inline-block; }
   header .menu__item, footer .menu__item {
     font-weight: normal;
-    font-style: normal;
     font-size: 18px;
     color: #ffffff;
+    line-height: 26px;
     padding: 5px 10px;
     margin-left: 10px;
     border: 1px solid transparent; }
@@ -187,16 +187,16 @@ header, footer {
     width: 65%;
     margin: 0 auto; }
   .promo__text {
+    font-weight: 500;
     font-size: 66px;
-    font-width: 500;
-    font-style: normal;
     color: #fff;
+    line-height: auto;
     padding: 185px 0; }
   .promo__btn {
+    font-weight: normal;
     font-size: 18px;
-    font-width: normal;
-    font-style: normal;
     color: #fff;
+    line-height: 26px;
     padding: 5px 10px;
     border: 1px solid #fff;
     display: inline-block; }
@@ -214,11 +214,11 @@ header, footer {
     vertical-align: middle; }
   .feature-text {
     font-weight: 500;
-    font-style: normal;
     font-size: 18px;
+    color: #444;
+    line-height: auto;
     padding-left: 20px;
     box-sizing: border-box;
-    color: #444;
     display: inline-block;
     width: 75%;
     vertical-align: middle; }
@@ -228,9 +228,9 @@ header, footer {
   .section-header__text {
     font-weight: 500;
     font-size: 32px;
+    color: #444;
     line-height: 26px;
     padding: 15px 0;
-    color: #444;
     display: block; }
   .section-header__underline {
     width: 62px;
@@ -243,8 +243,8 @@ header, footer {
   margin: 25px 0;
   font-weight: normal;
   font-size: 18px;
-  line-height: 24px;
-  color: #444; }
+  color: #444;
+  line-height: 24px; }
 
 span.section-text {
   margin: 0; }
@@ -253,8 +253,8 @@ span.section-text {
   margin: 20px 0 60px; }
 
 .subheader {
-  font-size: 26px;
   font-weight: 500;
+  font-size: 26px;
   color: #444;
   line-height: 24px;
   margin: 30px 0; }
@@ -266,8 +266,9 @@ span.section-text {
   .brief .video-wrapper {
     display: block;
     border-bottom: 20px solid transparent; }
-    .brief .video-wrapper > img {
+    .brief .video-wrapper > iframe {
       width: 100%;
+      height: 300px;
       box-shadow: 0 30px 0px -20px rgba(0, 0, 0, 0.15); }
 
 .gallery {
@@ -341,8 +342,8 @@ span.section-text {
           height: 90px;
           font-weight: 500;
           font-size: 20px;
-          line-height: 26px;
           color: #fff;
+          line-height: 26px;
           top: 55px;
           z-index: 1; }
     .how-path .path-wrapper .step-1, .how-path .path-wrapper .step-5 {
@@ -370,7 +371,6 @@ span.section-text {
   padding: 20px 0; }
   .timer .timer-text {
     font-weight: 500;
-    font-style: normal;
     font-size: 32px;
     color: #26668e;
     line-height: 26px;
@@ -378,7 +378,6 @@ span.section-text {
     padding: 5px 0; }
   .timer .time {
     font-weight: 500;
-    font-style: normal;
     font-size: 26px;
     color: #26668e;
     line-height: 26px;
@@ -394,6 +393,7 @@ span.section-text {
 .price-form .form-path {
   font-size: 0; }
   .price-form .form-path__text {
+    font-weight: normal;
     font-size: 18px;
     color: #444;
     line-height: 24px;
@@ -439,6 +439,7 @@ span.section-text {
 .price-form .form-pplcount {
   font-size: 0; }
   .price-form .form-pplcount__text {
+    font-weight: normal;
     font-size: 18px;
     color: #444;
     line-height: 24px;
@@ -487,6 +488,7 @@ span.section-text {
     font-size: 0;
     width: 45%; }
     .price-form .form-pplcount .form-childcount__text {
+      font-weight: normal;
       font-size: 18px;
       color: #444;
       line-height: 24px;
@@ -533,6 +535,7 @@ span.section-text {
 .price-form .form-name {
   font-size: 0; }
   .price-form .form-name__text {
+    font-weight: normal;
     font-size: 18px;
     color: #444;
     line-height: 24px;
@@ -579,6 +582,7 @@ span.section-text {
 .price-form .form-phone {
   font-size: 0; }
   .price-form .form-phone__text {
+    font-weight: normal;
     font-size: 18px;
     color: #444;
     line-height: 24px;
@@ -625,16 +629,16 @@ span.section-text {
 .price-form .form-submit {
   font-size: 0; }
   .price-form .form-submit__text {
-    font-size: 18px;
     font-weight: 700;
+    font-size: 18px;
     color: #444;
     line-height: 24px;
     display: inline-block;
     width: 20%;
     vertical-align: middle; }
   .price-form .form-submit__worth {
-    font-size: 38px;
     font-weight: 500;
+    font-size: 38px;
     color: #f97e7e;
     line-height: 24px;
     display: inline-block;
@@ -670,9 +674,10 @@ span.section-text {
       margin: 40px 0; }
       .details .faq .faq-list__question {
         position: relative;
+        font-weight: normal;
         font-size: 18px;
-        line-height: 24px;
         color: #444;
+        line-height: 24px;
         padding-left: 55px;
         margin: 20px 0; }
         .details .faq .faq-list__question:after {
@@ -687,9 +692,10 @@ span.section-text {
           top: -6px;
           left: 0px; }
       .details .faq .faq-list__answer {
+        font-weight: normal;
         font-size: 16px;
-        line-height: 24px;
         color: #444;
+        line-height: 24px;
         padding-left: 75px;
         margin: 20px 0; }
 
@@ -704,20 +710,21 @@ span.section-text {
   .stat .stat-wrapper {
     word-wrap: normal; }
     .stat .stat-wrapper .stat-number {
-      font-size: 42px;
       font-weight: 500;
-      display: inline-block;
+      font-size: 42px;
       color: #fff;
       line-height: 160px;
+      display: inline-block;
       width: 160px;
       height: 160px;
       border: 6px solid #fff;
       border-radius: 100%;
       margin: 20px 0; }
     .stat .stat-wrapper .stat-text {
-      font-size: 24px;
       font-weight: 500;
+      font-size: 24px;
       color: #fff;
+      line-height: auto;
       white-space: nowrap;
       display: inline-block;
       position: relative; }
@@ -732,15 +739,16 @@ span.section-text {
     .team .team-wrapper .team-member__photo {
       border-radius: 50%; }
     .team .team-wrapper .team-member__name {
-      font-size: 22px;
       font-weight: 500;
-      line-height: 26px;
+      font-size: 22px;
       color: #444;
+      line-height: 26px;
       margin: 30px 0 10px; }
     .team .team-wrapper .team-member__post {
+      font-weight: normal;
       font-size: 18px;
-      line-height: 26px;
       color: #444;
+      line-height: 26px;
       margin: 10px 0; }
 
 .reviews {
@@ -750,11 +758,12 @@ span.section-text {
     .reviews .reviews-wrapper .client-review__photo {
       border-radius: 50%; }
     .reviews .reviews-wrapper .client-review__name {
-      font-size: 22px;
       font-weight: 500;
+      font-size: 22px;
       color: #353535;
       line-height: 24px; }
     .reviews .reviews-wrapper .client-review__text {
+      font-weight: normal;
       font-size: 18px;
       color: #353535;
       line-height: 24px; }
@@ -782,15 +791,16 @@ span.section-text {
         background-image: url('../img/spritesheet.png');
         background-position: -10px -184px; }
     .contacts .airport__text {
-      font-size: 26px;
       font-weight: 500;
+      font-size: 26px;
       color: #444;
       line-height: 26px;
       margin: 0; }
     .contacts .airport__address {
+      font-weight: normal;
       font-size: 18px;
-      line-height: 26px;
       color: #616161;
+      line-height: 26px;
       margin: 10px 0; }
   .contacts .office {
     position: relative;
@@ -807,29 +817,31 @@ span.section-text {
       top: 0px;
       left: 0px; }
     .contacts .office__location {
-      font-size: 22px;
       font-weight: 500;
+      font-size: 22px;
       color: #2b2b2b;
       line-height: 26px;
       margin: 0; }
     .contacts .office__address-wrapper {
       margin: 10px 0; }
     .contacts .office__address, .contacts .office__schedule {
+      font-weight: normal;
       font-size: 20px;
-      line-height: 26px;
       color: #525252;
+      line-height: 26px;
       margin: 0; }
     .contacts .office__phone {
-      font-size: 26px;
       font-weight: 500;
+      font-size: 26px;
       color: #292929;
       line-height: 26px;
       margin-bottom: 50px; }
   .contacts .social .email {
     position: relative;
+    font-weight: normal;
     font-size: 22px;
-    line-height: 26px;
     color: #444;
+    line-height: 26px;
     margin-top: 0;
     border-bottom: 1px solid #444;
     display: inline-block;

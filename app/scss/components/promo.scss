@@ -10,24 +10,14 @@
   }
 
   &__text {
-    font: {
-      size: 66px;
-      width: 500;
-      style: normal;
-    }
-    color: #fff;
+    @include font($promo-main, 66px, 500, auto);
     padding: 185px 0
   }
 
   &__btn {
-    font: {
-      size: 18px;
-      width: normal;
-      style: normal;
-    }
-    color: #fff;
+    @include font($promo-main);
     padding: 5px 10px;
-    border: 1px solid #fff;
+    border: 1px solid $promo-main;
     display: inline-block;
   }
 

@@ -3,13 +3,8 @@ footer {
   background-color: $header-bg-color;
 
   .logo {
-    font: {
-      weight: 500;
-      style: normal;
-    }
     > a {
-      color: $header-font-color;
-      font-size: 22px;
+      @include font($header-font-color, 22px, 500);
     }
     padding: 20px 0 20px;
   }
@@ -20,12 +15,7 @@ footer {
     }
 
     &__item {
-      font: {
-        weight: normal;
-        style: normal;
-        size: 18px;
-      }
-      color: $header-font-color;
+      @include font($header-font-color);
       padding: 5px 10px;
       margin-left: 10px;
       border: 1px solid transparent;

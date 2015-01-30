@@ -10,14 +10,9 @@
   }
 
   &-text {
-    font: {
-      weight: 500;
-      style: normal;
-      size: 18px;
-    }
+    @include font($main-color, 18px, 500, auto);
     padding-left: 20px;
     box-sizing: border-box;
-    color: #444;
     display: inline-block;
     width: 75%;
     vertical-align: middle
